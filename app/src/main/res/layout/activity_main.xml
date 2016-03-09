@@ -39,7 +39,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_weight="1"
-           android:text="*"
+           android:text="mult"
            android:textSize="8pt"
            android:id="@+id/btnMult">
            </Button>
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="-"
+            android:text="min"
             android:textSize="8pt"
             android:id="@+id/btnSub">
         </Button>
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="+"
+        android:text="add"
         android:textSize="8pt"
         android:id="@+id/btnAdd">
     </Button>
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="/"
+            android:text="div"
             android:textSize="8pt"
             android:id="@+id/btnDiv">
         </Button>
