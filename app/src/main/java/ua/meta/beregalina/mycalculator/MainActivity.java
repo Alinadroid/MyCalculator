@@ -86,7 +86,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
         }
 
-        String formatted = String.format("%.02f %s %.02f = %.02f", num1, oper, num2, result);
+        String formatted = String.format("%.2f %s %.2f = %.2f", num1, oper, num2, result);
         tvResult.setText(formatted);
         Toast.makeText(getApplicationContext(), formatted, Toast.LENGTH_SHORT).show();
     }
