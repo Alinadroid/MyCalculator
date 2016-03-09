@@ -1,7 +1,6 @@
 package ua.meta.beregalina.mycalculator;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -12,10 +11,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class MainActivity extends Activity implements View.OnClickListener {
 
-    final int MENU_RESET_ID =1;
-    final int MENU_QUIT_ID =2;
+    final int MENU_RESET_ID = 1;
+    final int MENU_QUIT_ID = 2;
 
     EditText etNum1;
     EditText etNum2;
@@ -35,15 +34,15 @@ public class MainActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
 
 // находим элементы
-        etNum1=(EditText)findViewById(R.id.etNum1);
-        etNum2=(EditText)findViewById(R.id.etNum2);
+        etNum1 = (EditText) findViewById(R.id.etNum1);
+        etNum2 = (EditText) findViewById(R.id.etNum2);
 
-        btnAdd = (Button)findViewById(R.id.btnAdd);
-        btnDiv = (Button)findViewById(R.id.btnDiv);
-        btnMult = (Button)findViewById(R.id.btnMult);
-        btnSub = (Button)findViewById(R.id.btnSub);
+        btnAdd = (Button) findViewById(R.id.btnAdd);
+        btnDiv = (Button) findViewById(R.id.btnDiv);
+        btnMult = (Button) findViewById(R.id.btnMult);
+        btnSub = (Button) findViewById(R.id.btnSub);
 
-        tvResult = (TextView)findViewById(R.id.tvResult);
+        tvResult = (TextView) findViewById(R.id.tvResult);
         // приписываем обработки
         btnMult.setOnClickListener(this);
         btnSub.setOnClickListener(this);
@@ -58,11 +57,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
         float result = 0;
 
         if (TextUtils.isEmpty(etNum1.getText().toString())
-            ||TextUtils.isEmpty(etNum2.getText().toString())){
+                || TextUtils.isEmpty(etNum2.getText().toString())) {
             return;
         }
 
-            //читаем EditText и заполняем переменные числами
+        //читаем EditText и заполняем переменные числами
         num1 = Float.parseFloat(etNum1.getText().toString());
         num2 = Float.parseFloat(etNum2.getText().toString());
 
@@ -95,8 +94,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //TODO Auto_generated method stub
-        menu.add(0,MENU_QUIT_ID,0, "Quit");
-        menu.add(0,MENU_RESET_ID,0, "Reset");
+        menu.add(0, MENU_QUIT_ID, 0, "Quit");
+        menu.add(0, MENU_RESET_ID, 0, "Reset");
         return super.onCreateOptionsMenu(menu);
     }
 
